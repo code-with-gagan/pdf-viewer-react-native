@@ -51,11 +51,6 @@ const PdfUrlModal = ({ pdfUrlModalIsOpen, setPdfUrlModalIsOpen, pdfUrl, setPdfUr
                             </Button>
                         </Button.Group>
                         <Button.Group space={3}>
-                            <Button colorScheme="blueGray" onPress={() => {
-                                setPdfUrlModalIsOpen(false);
-                            }}>
-                                Cancel
-                            </Button>
                             <Button disabled={pdfLink.length === 0} onPress={() => {
                                 handleSubmit()
                             }}>
